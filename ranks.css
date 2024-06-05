@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(56, 56, 56);
+}
+
+nav {
+    background-color: #313131;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.nav-links li {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the cards within the container */
+    gap: 20px; /* Space between cards */
+    margin: 2rem auto; /* Center the container and add top margin */
+    max-width: 1600px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.card {
+    background-color: #313131;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.cardinfo {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.buy-button {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #00FFFF;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #006161;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .card {
+        width: 30%; /* Adjust card width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links li {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .card {
+        width: 45%; /* Adjust card width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for very small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .buy-button {
+        padding: 10px 0;
+    }
+}
