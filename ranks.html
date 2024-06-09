@@ -9,63 +9,94 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ranks.html">Ranks</a></li>
-      <li><a href="#">Map ( In work )</a></li>
-      <li><a href="#">Players ( In work )</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-name">NextLVL</a>
+      <ul class="nav-links">
+        <li><a href="ranks.html" class="active">Ranks</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#soon">Soon</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="container">
-    <div class="card">
-      <h2>Legend Ⅰ [€2,50]</h2>
-      <ul>
-        <li class="cardinfo">Legend Ⅰ Rank ( Discord )</li>
-        <li class="cardinfo">/ec (enderchest)</li>
-        <li class="cardinfo">3 Homes</li>
-        <li class="cardinfo">[Legend 1] prefix ( Minecraft )</li>
-      </ul>
-      <button class="buy-button">Buy Rank</button>
+  <div class="ranks-container">
+    <div class="ranks-title">Our Current Ranks Available</div>
+    <div class="ranks-subtitle">Refund is not available</div>
+
+    <!-- Rank Card 1 -->
+    <div class="rank-card">
+      <div class="rank-card-title">Legend Ⅰ</div>
+      <div class="rank-card-subtitle">Membership</div>
+      <div class="rank-price">$2.50 <span class="rank-period">per month</span></div>
+      <div class="line"></div>
+      <div class="rank-features">
+        <ul>
+          <li class="cardinfo">Legend Ⅰ Rank (Discord)</li>
+          <li class="cardinfo">/ec (enderchest)</li>
+          <li class="cardinfo">3 Homes</li>
+          <li class="cardinfo">[Legend 1] prefix (Minecraft)</li>
+        </ul>
+      </div>
+      <button class="rank-buy-button">Buy</button>
     </div>
-    <div class="card">
-      <h2>Legend ⅠⅠ [€5]</h2>
-      <ul>
-        <li class="cardinfo">Legend ⅠⅠ Rank ( Discord )</li>
-        <li class="cardinfo">/ec (enderchest)</li>
-        <li class="cardinfo">/wb (crafting table)</li>
-        <li class="cardinfo">/stonecutter</li>
-        <li class="cardinfo">/carttable</li>
-        <li class="cardinfo">/smithingtable</li>
-        <li class="cardinfo">/grindstone</li>
-        <li class="cardinfo">8 Homes</li>
-        <li class="cardinfo">TPA ( Teleport )</li>
-        <li class="cardinfo">[Legend 2] prefix ( Minecraft )</li>
-      </ul>
-      <button class="buy-button">Buy Rank</button>
+
+    <!-- Rank Card 2 -->
+    <div class="rank-card">
+      <div class="rank-card-title">Legend ⅠⅠ</div>
+      <div class="rank-card-subtitle">Membership</div>
+      <div class="rank-price">$5 <span class="rank-period">per month</span></div>
+      <div class="line"></div>
+      <div class="rank-features">
+        <ul>
+          <li class="cardinfo">Legend ⅠⅠ Rank (Discord)</li>
+          <li class="cardinfo">/ec (enderchest)</li>
+          <li class="cardinfo">/wb (crafting table)</li>
+          <li class="cardinfo">/stonecutter</li>
+          <li class="cardinfo">/carttable</li>
+          <li class="cardinfo">/smithingtable</li>
+          <li class="cardinfo">/grindstone</li>
+          <li class="cardinfo">8 Homes</li>
+          <li class="cardinfo">TPA (Teleport)</li>
+          <li class="cardinfo">[Legend 2] prefix (Minecraft)</li>
+        </ul>
+      </div>
+      <button class="rank-buy-button">Buy</button>
     </div>
-    <div class="card">
-      <h2>Legend ⅠⅠⅠ + RSX Rank [€8]</h2>
-      <ul>
-        <li class="cardinfo">Legend ⅠⅠⅠ Rank ( Discord )</li>
-        <li class="cardinfo">/ec (enderchest)</li>
-        <li class="cardinfo">/wb (crafting table)</li>
-        <li class="cardinfo">/stonecutter</li>
-        <li class="cardinfo">/carttable</li>
-        <li class="cardinfo">/smithingtable</li>
-        <li class="cardinfo">/grindstone</li>
-        <li class="cardinfo">12 Homes</li>
-        <li class="cardinfo">TPA ( Teleport )</li>
-        <li class="cardinfo">[Legend 3] prefix ( Minecraft )</li>
-        <li class="cardinfo">Spawn blue body glow</li>
-        <li class="cardinfo">RSX rank ( Discord )</li>
-        <li class="cardinfo">Blue shulker box ( x2 )</li>
-        <li class="cardinfo">Golden apple ( x5 )</li>
-        <li class="cardinfo">Bedrock block ( x1 )</li>
-      </ul>
-      <button class="buy-button">Buy Rank</button>
+
+    <!-- Rank Card 3 -->
+    <div class="rank-card">
+      <div class="rank-card-title">Legend ⅠⅠⅠ + RSX Rank</div>
+      <div class="rank-card-subtitle">Membership</div>
+      <div class="rank-price">$8 <span class="rank-period">per month</span></div>
+      <div class="line"></div>
+      <div class="rank-features">
+        <ul>
+          <li class="cardinfo">Legend ⅠⅠⅠ Rank (Discord)</li>
+          <li class="cardinfo">/ec (enderchest)</li>
+          <li class="cardinfo">/wb (crafting table)</li>
+          <li class="cardinfo">/stonecutter</li>
+          <li class="cardinfo">/carttable</li>
+          <li class="cardinfo">/smithingtable</li>
+          <li class="cardinfo">/grindstone</li>
+          <li class="cardinfo">12 Homes</li>
+          <li class="cardinfo">TPA (Teleport)</li>
+          <li class="cardinfo">[Legend 3] prefix (Minecraft)</li>
+          <li class="cardinfo">Spawn blue body glow</li>
+          <li class="cardinfo">RSX rank (Discord)</li>
+          <li class="cardinfo">Blue shulker box (x2)</li>
+          <li class="cardinfo">Golden apple (x5)</li>
+          <li class="cardinfo">Bedrock block (x1)</li>
+        </ul>
+      </div>
+      <button class="rank-buy-button">Buy</button>
     </div>
+  </div>
+
+
+
+  <!-- <div class="container">
     <div class="card">
       <h2>RSX Rank ( normaal / supporter) [€1]</h2>
       <ul>
@@ -77,7 +108,7 @@
       </ul>
       <button class="buy-button">Buy Rank</button>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>

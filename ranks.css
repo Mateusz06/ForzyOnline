@@ -1,13 +1,36 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(56, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-nav {
-    background-color: #313131;
+.navbar {
+    background-color: #1f1f1f;
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    color: #A5A8FF;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(165, 168, 255, 0.75);
+    text-decoration: none;
+}
+
+.brand-name:hover {
+    color: #ffffff;
 }
 
 .nav-links {
@@ -15,119 +38,135 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .nav-links li {
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-}
-
-.nav-links li:last-child {
-    margin-right: 0;
+    margin-left: 0.5rem;
 }
 
 .nav-links a {
+    color: #ffffff;
     text-decoration: none;
-    color: #fff;
     font-size: 16px;
-    transition: color 0.3s;
+    padding: 10px 60px;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+
 }
 
 .nav-links a:hover {
-    color: #00FFFF;
+    background-color: #A5A8FF;
+    color: #101010;
 }
 
-.container {
-    display: flex;
-    justify-content: center; /* Center the cards within the container */
-    gap: 20px; /* Space between cards */
-    margin: 2rem auto; /* Center the container and add top margin */
-    max-width: 1600px;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+.nav-links a.active {
+    background-color: #A5A8FF;
+    color: #101010;
 }
 
-.card {
-    background-color: #313131;
+.ranks-container {
+    max-width: 110rem;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 20%;
-    height: 580px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 5rem;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    flex-grow: 1;
-}
-
-.cardinfo {
+.ranks-title {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #A5A8FF; /* Futuristic color */
+    text-shadow: 0 0 10px rgba(165, 168, 255, 0.75); /* Futuristic text shadow */
 }
 
-.buy-button {
-    margin-top: auto;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #00FFFF;
-    color: #000;
+.ranks-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.rank-card {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin between cards */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Futuristic background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Futuristic box shadow */
+    height: 40rem
+}
+
+.rank-card:last-child {
+    margin-right: 0;
+}
+
+.rank-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Futuristic color */
+}
+
+.rank-card-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.rank-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #A5A8FF; /* Futuristic color */
+}
+
+.rank-period {
+    font-size: 14px;
+    color: #777;
+    margin-left: 5px;
+}
+
+.rank-features {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rank-features ul {
+    list-style-type: disc;
+    margin-left: 0; /* Changed from 20px to 0 */
+}
+
+.rank-features ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rank-buy-button {
+    background-color: #A5A8FF;
+    color: #ffffff;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.buy-button:hover {
-    background-color: #006161;
+.rank-buy-button:hover {
+    background-color: #7e81ff;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 1200px) {
-    .card {
-        width: 30%; /* Adjust card width for medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links li {
-        margin-right: 1rem;
-        margin-left: 1rem;
-    }
-
-    .card {
-        width: 45%; /* Adjust card width for small screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-links li {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-
-    .card {
-        width: 90%; /* Adjust card width for very small screens */
-        height: auto; /* Allow height to adjust based on content */
-    }
-
-    .buy-button {
-        padding: 10px 0;
-    }
+.line {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
 }
